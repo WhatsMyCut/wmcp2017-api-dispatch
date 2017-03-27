@@ -22,7 +22,7 @@ return [
             'user' => "db0607588094",
             'pass' => "MySQL123!",
             'dbname' => "db607588094",
-            'socket' => "/kunden/tmp/mysql5.sock",
+            'socket' => ":/kunden/tmp/mysql5.sock",
         ]
     ],
 ];
