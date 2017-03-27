@@ -18,7 +18,7 @@ return [
 */
         // DB settings
         'db' => [
-            'host' => "localhost",
+            'host' => "home116378425.1and1-data.host",
             'user' => "dbo282171973",
             'pass' => "MySQL123!",
             'dbname' => "db282171973",
