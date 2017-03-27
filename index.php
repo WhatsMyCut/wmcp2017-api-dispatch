@@ -17,12 +17,13 @@ $routes = [
   }),
   action('GET', '/aboutme', page(__DIR__.'/views/about'))
 ];
-
 # sample dependencies
 $config = require __DIR__.'/config.php';
 $settings = $config['settings'];
+var_dump($settings);
 
 $db = createDBConnection($settings['db']);
+var_dump($db);
 
 # we need the method and requested path
 $verb = $_SERVER['REQUEST_METHOD'];
