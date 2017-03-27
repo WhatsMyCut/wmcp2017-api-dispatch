@@ -1,7 +1,7 @@
 <?php
-
-require './dispatch.php';
-require './wmcp_api.php';
+try {
+require 'dispatch.php';
+require 'wmcp_api.php';
 
 # create a stack of actions
 $routes = [
@@ -33,4 +33,6 @@ $responder = serve($routes, $verb, $path, $db, $config);
 
 # invoke responder to flush response
 $responder();
-
+} catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
