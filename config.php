@@ -22,6 +22,7 @@ return [
             'user' => "dbo282171973",
             'pass' => "MySQL123!",
             'dbname' => "db282171973",
+            'socket' => "/var/run/mysqld/mysqld.sock",
         ]
     ],
 ];
