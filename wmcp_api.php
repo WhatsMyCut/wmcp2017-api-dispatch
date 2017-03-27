@@ -6,7 +6,7 @@ function createDBConnection($settings) {
     $db_user = $settings['user'];
     $db_pass = $settings['pass'];
     $db_name = $settings['dbname'];
-$link = mysql_connectp('127.0.0.1', $db_user, $db_pass);
+$link = mysql_connect('127.0.0.1', $db_user, $db_pass);
 if (!$link) {
     die('Could not connect: ' . mysql_error());
 }
