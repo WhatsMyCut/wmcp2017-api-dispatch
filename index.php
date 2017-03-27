@@ -1,6 +1,7 @@
 <?php
 
 require './dispatch.php';
+require './wmcp_api.php';
 
 # create a stack of actions
 $routes = [
