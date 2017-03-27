@@ -10,7 +10,7 @@ function createDBConnection($settings) {
     try {
 
         //create PDO connection
-        $dsn = 'mysql:host=' . $db_host . ';dbname=db282171973';
+        $dsn = 'mysql:unix_socket=' . $db_sock . ';dbname=db282171973';
         $username = $db_user;
         $password = $db_pass;
         $options = array(
