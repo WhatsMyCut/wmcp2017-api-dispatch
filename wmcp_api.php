@@ -16,7 +16,7 @@ mysql_close($link);
 */
     try {
         //create PDO connection
-        $dsn = 'mysql:unix_socket=' . $db_sock . ';dbname=' . $db_name;
+        $dsn = 'mysql:host=' . $db_host . ';dbname=' . $db_name;
         $username = $db_user;
         $password = $db_pass;
         $options = array(
