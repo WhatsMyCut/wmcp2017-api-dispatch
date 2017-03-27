@@ -6,9 +6,15 @@ function createDBConnection($settings) {
     $db_user = $settings['user'];
     $db_pass = $settings['pass'];
     $db_name = $settings['dbname'];
+$link = mysql_connectp('127.0.0.1', $db_user, $db_pass);
+if (!$link) {
+    die('Could not connect: ' . mysql_error());
+}
+echo 'Connected successfully';
+mysql_close($link);
 
+/*
     try {
-
         //create PDO connection
         $dsn = 'mysql:unix_socket=' . $db_sock . ';port=8889;dbname=db282171973';
         $username = $db_user;
@@ -22,4 +28,5 @@ function createDBConnection($settings) {
         //show error
         die('Could not connect: ' . $e->getCode() . ": " . $e->getMessage());
     }
+    */
 }
