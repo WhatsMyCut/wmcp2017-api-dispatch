@@ -21,7 +21,10 @@ $routes = [
 # sample dependencies
 $config = require __DIR__.'/config.php';
 $settings = $config['settings'];
-//$db = createDBConnection($settings['db']);
+die($settings);
+
+
+$db = createDBConnection($settings['db']);
 $db = [];
 
 # we need the method and requested path
