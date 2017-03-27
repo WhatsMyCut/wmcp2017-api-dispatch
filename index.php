@@ -6,7 +6,7 @@ require './wmcp_api.php';
 # create a stack of actions
 $routes = [
   action('GET', '/users.json', function ($db, $config) {
-    $list = loadAllBooks($db);
+    $list = loadAllUsers($db);
     $json = json_encode($list);
     return response($json, 200, ['content-type' => 'application/json']);
   }),
@@ -15,7 +15,7 @@ $routes = [
     $html = phtml(__DIR__.'/views/user', ['user' => $user]);
     return response($html);
   }),
-  action('GET', '/about', page(__DIR__.'/views/about'))
+  action('GET', '/aboutme', page(__DIR__.'/views/about'))
 ];
 
 # sample dependencies
