@@ -18,10 +18,10 @@ return [
 */
         // DB settings
         'db' => [
-            'host' => "216.250.121.40",
-            'user' => "dbo282171973",
+            'host' => "127.0.0.1",
+            'user' => "db0607588094",
             'pass' => "MySQL123!",
-            'dbname' => "db282171973",
+            'dbname' => "db607588094",
             'socket' => "/var/run/mysqld/mysqld.sock",
         ]
     ],
