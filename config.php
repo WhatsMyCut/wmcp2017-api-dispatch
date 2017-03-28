@@ -19,9 +19,9 @@ return [
         // DB settings
         'db' => [
             'host' => "127.0.0.1",
-            'user' => "dbo0607588094",
+            'user' => "dbo282171973",
             'pass' => "MySQL123!",
-            'dbname' => "db607588094",
+            'dbname' => "db282171973",
             'socket' => ":/kunden/tmp/mysql5.sock",
         ]
     ],

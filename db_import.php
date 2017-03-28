@@ -1,7 +1,7 @@
 <?php
 //ENTER THE RELEVANT INFO BELOW
-$mysqlDatabaseName ='db607588094';
-$mysqlUserName ='dbo607588094';
+$mysqlDatabaseName ='db282171973';
+$mysqlUserName ='dbo282171973';
 $mysqlPassword ='MySQL123!';
 $mysqlImportFilename ='yourMysqlBackupFile.sql';
 
