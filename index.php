@@ -20,7 +20,6 @@ $routes = [
 # sample dependencies
 $config = require __DIR__.'/config.php';
 $settings = $config['settings'];
-var_dump($settings);
 
 $db = createDBConnection($settings['db']);
 var_dump($db);

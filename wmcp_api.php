@@ -7,6 +7,7 @@ function createDBConnection($settings) {
     $db_pass = $settings['pass'];
     $db_name = $settings['dbname'];
     
+    var_dump($settings);
 
 $link = mysql_connect($db_host, $db_user, $db_pass);
 if (!$link) {
