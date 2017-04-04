@@ -1,11 +1,18 @@
 <?php
 
 function createDBConnection($settings) {
+    /*
     $db_host = $settings['host'];
     $db_sock = $settings['socket'];
     $db_user = $settings['user'];
     $db_pass = $settings['pass'];
     $db_name = $settings['dbname'];
+*/
+    $db_host = 'db607588094.db.1and1.com';
+    $db_user = 'dbo607588094';
+    $db_pass = 'MySQL123!';
+    $db_name = 'db607588094';
+
     
     var_dump($settings);
 
@@ -49,3 +56,4 @@ $conn = new PDO("mysql:host=$servername;port=8889;dbname=AppDatabase", $username
     }
     */
 }
+
