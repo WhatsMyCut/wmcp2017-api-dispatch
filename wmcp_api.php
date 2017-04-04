@@ -1,4 +1,5 @@
 <?php
+
 function createDBConnection() {
     /*
     $db_host = $settings['host'];
