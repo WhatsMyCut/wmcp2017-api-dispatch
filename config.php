@@ -18,10 +18,10 @@ return [
 */
         // DB settings
         'db' => [
-            'host' => "db823.perfora.net",
-            'user' => "dbo282171973",
+            'host' => "db607588094.db.1and1.com",
+            'user' => "dbo607588094",
             'pass' => "MySQL123!",
-            'dbname' => "db282171973",
+            'dbname' => "db607588094",
             'socket' => ":/kunden/tmp/mysql5.sock",
         ]
     ],
