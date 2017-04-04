@@ -18,7 +18,7 @@ return [
 */
         // DB settings
         'db' => [
-            'host' => "localhost",
+            'host' => "db823.perfora.net",
             'user' => "dbo282171973",
             'pass' => "MySQL123!",
             'dbname' => "db282171973",

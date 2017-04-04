@@ -9,13 +9,17 @@ function createDBConnection($settings) {
     
     var_dump($settings);
 
-$link = mysql_connect($db_host, $db_user, $db_pass);
+$link = mysql_connect($db_sock, $db_user, $db_pass);
 if (!$link) {
     die('Could not connect: ' . mysql_error());
 }
 echo 'Connected successfully';
 mysql_close($link);
 /*
+http://stackoverflow.com/questions/29395452/php-connection-failed-sqlstatehy000-2002-connection-refused
+$conn = new PDO("mysql:host=$servername;port=8889;dbname=AppDatabase", $username, $password); 
+
+
     try {
         //create PDO connection
         $dsn = 'mysql:unix_socket=' . $db_sock . ';dbname=' . $db_name;
