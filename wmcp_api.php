@@ -1,6 +1,4 @@
-<?php
-
-function createDBConnection($settings) {
+<?phpfunction createDBConnection() {
     /*
     $db_host = $settings['host'];
     $db_sock = $settings['socket'];
@@ -57,3 +55,4 @@ $conn = new PDO("mysql:host=$servername;port=8889;dbname=AppDatabase", $username
     */
 }
 
+createDBConnection();
