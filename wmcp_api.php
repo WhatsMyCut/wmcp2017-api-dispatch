@@ -1,4 +1,5 @@
-<?phpfunction createDBConnection() {
+<?php
+function createDBConnection() {
     /*
     $db_host = $settings['host'];
     $db_sock = $settings['socket'];
