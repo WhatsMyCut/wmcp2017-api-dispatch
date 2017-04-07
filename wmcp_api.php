@@ -17,3 +17,4 @@ function createDBConnection($settings) {
     }
     return $link;
 }
+?>

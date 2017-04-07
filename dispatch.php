@@ -122,3 +122,5 @@ function phtml($path, array $vars = []) {
   require "{$path}.phtml";
   return trim(ob_get_clean());
 }
+
+?>
