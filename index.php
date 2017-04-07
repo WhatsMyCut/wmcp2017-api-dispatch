@@ -3,6 +3,14 @@ try {
 require 'dispatch.php';
 require 'wmcp_api.php';
 
+# load config
+$config = require __DIR__.'/config.php';
+$settings = $config['settings']['db'];
+var_dump($settings);
+
+$db = createDBConnection($settings);
+
+
 # create a stack of actions
 $routes = [
   action('GET', '/', function ($db, $config) {
@@ -17,13 +25,6 @@ $routes = [
   }),
   action('GET', '/aboutme', page(__DIR__.'/views/about'))
 ];
-# sample dependencies
-$config = require __DIR__.'/config.php';
-$settings = $config['settings']['db'];
-var_dump($db);
-
-$db = createDBConnection($settings);
-
 # we need the method and requested path
 $verb = $_SERVER['REQUEST_METHOD'];
 $path = $_SERVER['REQUEST_URI'];
