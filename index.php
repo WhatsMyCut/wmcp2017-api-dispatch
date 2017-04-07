@@ -6,9 +6,9 @@ require 'wmcp_api.php';
 # load config
 $config = require __DIR__.'/config.php';
 $settings = $config['settings']['db'];
-var_dump($settings);
-/*
 $db = createDBConnection($settings);
+var_dump($db);
+/*
 
 
 # create a stack of actions
