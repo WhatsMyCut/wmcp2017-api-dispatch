@@ -5,8 +5,8 @@ require 'wmcp_api.php';
 
 # create a stack of actions
 $routes = [
-  action('GET', '/users.json', function ($db, $config) {
-    $list = loadAllUsers($db);
+  action('GET', '/', function ($db, $config) {
+    $list = "[{ 'status': '200', 'message': 'success'}]";
     $json = json_encode($list);
     return response($json, 200, ['content-type' => 'application/json']);
   }),
