@@ -8,7 +8,6 @@ $config = require __DIR__.'/config.php';
 $settings = $config['settings']['db'];
 $db = createDBConnection($settings);
 var_dump($db);
-/*
 
 
 # create a stack of actions
@@ -25,6 +24,9 @@ $routes = [
   }),
   action('GET', '/aboutme', page(__DIR__.'/views/about'))
 ];
+var_dump($routes);
+
+/*
 # we need the method and requested path
 $verb = $_SERVER['REQUEST_METHOD'];
 $path = $_SERVER['REQUEST_URI'];
