@@ -7,7 +7,7 @@ require 'wmcp_api.php';
 $config = require __DIR__.'/config.php';
 $settings = $config['settings']['db'];
 var_dump($settings);
-
+/*
 $db = createDBConnection($settings);
 
 
@@ -34,6 +34,9 @@ $responder = serve($routes, $verb, $path, $db, $config);
 
 # invoke responder to flush response
 $responder();
+*/
 } catch (Exception $e) {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
 }
+
+?>
