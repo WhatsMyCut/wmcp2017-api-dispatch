@@ -24,9 +24,7 @@ $routes = [
   }),
   action('GET', '/aboutme', page(__DIR__.'/views/about'))
 ];
-var_dump($routes);
 
-/*
 # we need the method and requested path
 $verb = $_SERVER['REQUEST_METHOD'];
 $path = $_SERVER['REQUEST_URI'];
@@ -36,7 +34,6 @@ $responder = serve($routes, $verb, $path, $db, $config);
 
 # invoke responder to flush response
 $responder();
-*/
 } catch (Exception $e) {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
 }
